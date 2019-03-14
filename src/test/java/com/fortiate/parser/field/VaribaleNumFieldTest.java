@@ -21,7 +21,7 @@ public class VaribaleNumFieldTest {
     @Test
     public void testEncode() {
         Logger logger = Logger.getLogger(FixedNumFieldTest.class);
-        logger.info("Encoding VariableNumField ...");
+        logger.info("Encoding VariableNumField Amod...");
         try {
             byte[] bytes;
             String lines;
@@ -46,7 +46,7 @@ public class VaribaleNumFieldTest {
     @Test
     public void testDecode() {
         Logger logger = Logger.getLogger(FixedNumFieldTest.class);
-        logger.info("Decoding VaribaleNumField ...");
+        logger.info("Decoding VaribaleNumField YESAMOD ...");
         try {
             byte[] bytes;
             String lines;

@@ -26,7 +26,7 @@ public class Generator {
             IsoField isoField = Strings.unmarshal(lines, IsoField.class, "application/xml");
             CompoundField field = new FixedCompoundField(isoField);
             field.setValue(0, "0200"); // MTI - n4
-            field.setValue(2, "9001000000672941810"); // PAN - n..19
+            field.setValue(2, "6001000000672941810"); // PAN - n..19
             field.setValue(3, "10000"); // Processing Code - n6
             field.setValue(4, ""); // Amount, Transaction - n12
             field.setValue(5, "50000"); // Amount, Settlement - n12
@@ -46,11 +46,11 @@ public class Generator {
             field.setValue(33, "555555"); // Forwarding Institution Identification Code - n..11
             field.setValue(37, "732822869236"); // Retrieval Reference Number - an12
             field.setValue(41, "42810486"); // Card Acceptor Teerminal Identification - ans8
-            field.setValue(42, "Shemistone PLC"); // Card Acceptor Identification Code - ans15
-            field.setValue(43, "Shemistone PLC NRB KE"); // Card acceptor name/location (1-23 street address, 24-36 city, 37-38 state, 39-40 country)  - ans40
-            field.setValue(49, "835"); // Currency Code Transaction - a3 or n3
-            field.setValue(50, "835"); // Currency Setttlement - a3 or n3
-            field.setValue(51, "835"); // Currency Cardholder Billing - a3 or n3
+            field.setValue(42, "Cleartrips LLC"); // Card Acceptor Identification Code - ans15
+            field.setValue(43, "Cleartrips LLC PUN IN"); // Card acceptor name/location (1-23 street address, 24-36 city, 37-38 state, 39-40 country)  - ans40
+            field.setValue(49, "356"); // Currency Code Transaction - a3 or n3
+            field.setValue(50, "356"); // Currency Setttlement - a3 or n3
+            field.setValue(51, "356"); // Currency Cardholder Billing - a3 or n3
             field.setValue(52, Converters.hexToBin("931EFFFFFFFFFFFF")); // PIN Data - b8
             field.setValue(53, "2001000000000000"); // Security Related Control Information - n16
             field.setValue(60, "00000000000000000000"); // Recerved - ans...999

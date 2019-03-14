@@ -497,31 +497,11 @@
       <id>48</id>
       <length>4</length>
       <maxLength>4</maxLength>
-      <cls>com.fortiate.parser.field.FixedCompoundField</cls>
+      <cls>com.fortiate.parser.field.FixedNumField</cls>
       <padder>ZERO_PREPENDER</padder>
       <description />
       <valueEncoding>ASC</valueEncoding>
       <lengthEncoding>BCD</lengthEncoding>
-      <isoField>
-     	   <id>0</id>
-   	   <length>4</length>
-           <maxLength>4</maxLength>
-	   <cls>com.fortiate.parser.field.FixedNumField</cls>
-	   <padder>SPACE_APPENDER</padder>
-	   <description>Sub Field No 1 in DE 48</description>
-	   <valueEncoding>BCD</valueEncoding>
-	   <lengthEncoding>BCD</lengthEncoding>
-      </isoField>
-      <isoField>
-     	      <id>1</id>
-	      <length>8</length>
-	      <maxLength>8</maxLength>
-	      <cls>com.fortiate.parser.field.FixedAnsField</cls>
-	      <padder>ZERO_PREPENDER</padder>
-	      <description>Sub Field No 2 in DE 48</description>
-	      <valueEncoding>ASC</valueEncoding>
-	      <lengthEncoding>BCD</lengthEncoding>
-      </isoField>
    </isoField>
    <isoField>
       <id>49</id>
